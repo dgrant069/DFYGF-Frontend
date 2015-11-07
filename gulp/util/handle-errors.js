@@ -5,7 +5,6 @@ var notify = require('gulp-notify');
 module.exports = function(error) {
 
   if( !global.isProd ) {
-
     var args = Array.prototype.slice.call(arguments);
 
     // Send error to notification center with gulp-notify
@@ -16,12 +15,10 @@ module.exports = function(error) {
 
     // Keep gulp from hanging on this task
     this.emit('end');
-
   } else {
     // Log the error and stop the process
     // to prevent broken code from building
     console.log(error);
     process.exit(1);
   }
-
 };

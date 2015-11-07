@@ -4,9 +4,6 @@ var gulp   = require('gulp');
 var config = require('../config');
 
 gulp.task('copyIcons', function() {
-
-  // Copy icons from root directory to build/
-  return gulp.src(['./*.png', './favicon.ico'])
+  return gulp.src(config.icons.src)
     .pipe(gulp.dest(config.buildDir));
-
 });

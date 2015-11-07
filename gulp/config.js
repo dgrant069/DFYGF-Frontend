@@ -1,26 +1,39 @@
 'use strict';
 
 module.exports = {
-
   'serverport': 3000,
 
+  'html': {
+    'src': './src/index.html',
+    'dest': './build/'
+  },
+
   'scripts': {
-    'src': './app/js/**/*.js',
+    'src': './src/**/*.js',
     'dest': './build/js/'
   },
 
   'images': {
-    'src': './app/images/**/*.{jpeg,jpg,png}',
+    'src': './src/assets/images/**/*.{jpeg,jpg,png}',
     'dest': './build/images/'
   },
 
+  'fonts': {
+    'src': './src/assets/fonts/**/*',
+    'dest': './build/fonts/'
+  },
+
+  'icons': {
+    'src': './src/assets/icons/**/*.{ico,png}',
+    'dest': './build/icons/'
+  },
+
   'styles': {
-    'src': './app/styles/**/*.scss',
+    'src': './src/**/*.scss',
     'dest': './build/css/'
   },
 
-  'sourceDir': './app/',
+  'sourceDir': './src/',
 
-  'buildDir': './build/'
-
+  'buildDir': './build'
 };
