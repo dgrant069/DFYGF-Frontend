@@ -23,5 +23,6 @@ bower_components/
 build/
 bin/
 dev/
+.sass-cache/
 
 .elasticbeanstalk/
