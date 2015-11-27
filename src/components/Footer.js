@@ -1,19 +1,16 @@
 'use strict';
 
-import React from 'react/addons';
+import React from 'react';
 
 const Footer = React.createClass({
 
-  render() {
-    return (
-      <footer>
-
-        Footer
-
-      </footer>
-    );
-  }
-
+    render() {
+        return (
+            <footer>
+                Footer
+            </footer>
+        );
+    }
 });
 
 export default Footer;
