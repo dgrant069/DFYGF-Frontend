@@ -5,8 +5,8 @@ import {ListenerMixin}    from 'reflux';
 
 // import CurrentUserActions from './actions/currentUserActions';
 // import CurrentUserStore   from './stores/currentUserStore';
-import Header             from './components/header';
-import Footer             from './components/footer';
+import Header             from './components/header/header';
+import Footer             from './components/footer/footer';
 
 const App = React.createClass({
 
@@ -45,11 +45,10 @@ const App = React.createClass({
 
   render() {
     return (
-      <div>
-        <Header />
-        <div>Hello Fucking World</div>
-        {this.renderChildren()}
-        <Footer />
+      <div className="app-wrapper">
+          <Header />
+          {this.renderChildren()}
+          <Footer />
       </div>
     );
   }
