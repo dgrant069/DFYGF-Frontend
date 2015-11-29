@@ -1,0 +1,21 @@
+// These are the variables used throughout the application. This is where
+// overwrites that are not specific to components should be maintained.
+
+// Media Queries
+// $handsetQuery: ~"screen and (max-width:599px)";
+// $tabletQuery: ~"screen and (min-width:600px) and (max-width:1024px)";
+// $desktopQuery: ~"screen and (min-width:1025px)";
+
+// Header Offsets
+$headerHeight: 60px;
+$backNavHeight: 40px;
+
+// $container-without-nav: $headerHeight + $timeBarHeight;
+// $container-with-nav: $container-without-nav + $backNavHeight;
+
+// Shared elements
+$borderRadius: 0px;
+$border: 1px solid black;
+$handsetPadding: 8px;
+$tabletPadding: 12px;
+$desktopPadding: 16px;

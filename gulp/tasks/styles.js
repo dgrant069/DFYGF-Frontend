@@ -16,8 +16,9 @@ gulp.task('styles', function () {
     if(!global.isProd){
       return sass('src/**/*.scss', { style: 'expanded' })
             .pipe(autoprefixer('last 2 versions'))
+            .pipe(sourcemaps.init())
             .pipe(concat('main.css'))
-            .on('error', handleErrors)
+            .pipe(sourcemaps.write({includeContent: false, sourceRoot: '/css'}))
             .pipe(gulp.dest(config.styles.dest))
             .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true })));
     }
