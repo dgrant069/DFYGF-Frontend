@@ -1,6 +1,10 @@
-$lightgrey: #a4adbd;
-$mainThemeColor: #1A2C49;
+// Theme colors
+$mainThemeColor: #9dc552;
+$buttonColor: #3498db;
 $transparentMainTheme: fade($mainThemeColor, 85%);
+
+// Utility colors
+$lightgrey: #a4adbd;
 $tileMainBg: #f3f8fa;
 $tileBottomStrip: #e1f0f8;
 $seperatorGrey: #E6E7E8;
@@ -8,12 +12,12 @@ $backNavColor: #D1D3D4;
 $buttonGrey: #eff1f2;
 $backNavColor: #D1D1D1;
 $transparentBlue: #Cedde9;
-$orange: #BA5625;
 $transparentOrange: #fce3d6;
-$red: #5E2511;
 $transparentRed: #f4d8d6;
 
 // Standard colors
+$red: #5E2511;
+$orange: #BA5625;
 $white: #ffffff;
 $lightBlue: #9BC4E7;
 $green: #4F7F5B;

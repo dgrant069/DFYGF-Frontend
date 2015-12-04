@@ -1,5 +1,5 @@
-.nav-wrapper {
-    right: 0;
+.logo-wrapper {
+    left: 0;
     display: block;
     position: absolute;
     text-align: center;
@@ -9,12 +9,7 @@
     padding: 0 $minPadding;
     background-color: inherit;
 
-    .nav-list {
-        .nav-link {
-            a {
-                text-decoration: none;
-                padding: 0 8px;
-            }
-        }
+    .logo {
+        text-decoration: none;
     }
 }

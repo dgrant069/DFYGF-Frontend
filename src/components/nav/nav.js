@@ -7,7 +7,12 @@ const Navigation = React.createClass({
     render() {
         return (
             <nav className="nav-wrapper">
-                <Link to="/" className="nav-link">a link to somewhere</Link>
+                <ul className="nav-list">
+                    <li className="nav-link">
+                        <Link to="/account">profile</Link>
+                        <Link to="/add-gift">add gift</Link>
+                    </li>
+                </ul>
             </nav>
         );
     }

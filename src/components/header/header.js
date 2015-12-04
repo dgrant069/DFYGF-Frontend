@@ -1,14 +1,14 @@
 'use strict';
 
 import React            from 'react';
-import {Link}           from 'react-router';
+import Logo             from '../logo/logo';
 import Navigation       from '../nav/nav';
 
 const Header = React.createClass({
     render() {
         return (
             <header className="header-wrapper">
-                <Link to="/" className="logo">DFGYG</Link>
+                <Logo />
                 <Navigation />
             </header>
         );

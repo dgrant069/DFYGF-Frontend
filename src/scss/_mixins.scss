@@ -1,0 +1,29 @@
+// @mixin logo($inheritedValues){
+//     @if $inheritedValues == "inherit" {
+//         $tempHeight: "inherit";
+
+//         .logo-wrapper {
+//             left: 0;
+//             display: block;
+//             position: absolute;
+//             text-align: center;
+//             height: $tempHeight;
+//             line-height: $tempHeight;
+//             min-width: 60px;
+//             padding: 0 $minPadding;
+//             background-color: inherit;
+//         }
+//     } @else {
+//         .logo-wrapper {
+//             left: 0;
+//             display: block;
+//             position: absolute;
+//             text-align: center;
+//             height: $inheritedValues;
+//             line-height: $inheritedValues;
+//             min-width: 60px;
+//             padding: 0 $minPadding;
+//             background-color: inherit;
+//         }
+//     }
+// }

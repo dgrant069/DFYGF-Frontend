@@ -6,9 +6,7 @@ const Footer = React.createClass({
 
     render() {
         return (
-            <footer>
-                Footer
-            </footer>
+            <footer></footer>
         );
     }
 });

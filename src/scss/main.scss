@@ -1,3 +1,5 @@
+@import 'reset';
+
 @import 'colors';
 @import 'variables';
 // @import 'fonts';
@@ -11,3 +13,45 @@
 // Import from components
 @import '../components/header/header';
 @import '../components/nav/nav';
+@import '../components/logo/logo';
+@import '../components/itemForm/itemForm';
+
+.app-wrapper {
+    // min-height: 600px;
+    // height: auto;
+    position: relative;
+    padding-bottom: $minPadding;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .all-views {
+        position: relative;
+    }
+}
+
+.all-views {
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.view-title {
+    font-size: $viewTitleFontSize;
+}
+
+.button {
+    display: block;
+    background: linear-gradient(to bottom, $buttonColor, #2980b9);
+    border-radius: $borderRadius;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: $minPadding;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+}
