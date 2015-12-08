@@ -10,7 +10,7 @@ const Navigation = React.createClass({
                 <ul className="nav-list">
                     <li className="nav-link">
                         <Link to="/account">profile</Link>
-                        <Link to="/add-gift">add gift</Link>
+                        <Link to="/add-item">add gift</Link>
                     </li>
                 </ul>
             </nav>
