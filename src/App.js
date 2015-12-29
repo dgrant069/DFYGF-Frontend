@@ -12,11 +12,11 @@ const App = React.createClass({
 
   mixins: [ListenerMixin],
 
-  // getInitialState() {
-  //   return {
-  //     currentUser: {}
-  //   };
-  // },
+  getInitialState() {
+    return {
+      currentUser: "dgrant069"
+    };
+  },
 
   // _onUserChange(err, user) {
   //   if ( err ) {
@@ -36,9 +36,10 @@ const App = React.createClass({
   // },
 
   renderChildren() {
+    console.log("app state", this.state);
     return React.cloneElement(this.props.children, {
       params: this.props.params,
-      query: this.props.query
+      query: this.props.query,
       // currentUser: this.state.currentUser
     });
   },
@@ -46,11 +47,11 @@ const App = React.createClass({
   render() {
     return (
       <div className="app-wrapper">
-          <Header />
-          {this.renderChildren()}
-          <Footer />
+      <Header user={this.state.currentUser}/>
+      {this.renderChildren()}
+      <Footer />
       </div>
-    );
+      );
   }
 });
 

@@ -6,6 +6,7 @@ import Navigation       from '../nav/nav';
 
 const Header = React.createClass({
     render() {
+        console.log("header props, ", this.props);
         return (
             <header className="header-wrapper">
                 <Logo />
