@@ -1,7 +1,7 @@
 'use strict';
 
 import Reflux             from 'reflux';
-import ListActions        from '../actions/ListActions';
+import ItemListActions        from '../actions/itemListActions';
 // import AuthAPI            from '../utils/AuthAPI';
 
 let list = [
@@ -23,9 +23,8 @@ function handleLoad(Action, Subaction){
     console.log("The on" + Action + Subaction + " handler was called");
 };
 
-const ListStore = Reflux.createStore({
-
-    listenables: [ListActions],
+const ItemListStore = Reflux.createStore({
+    listenables: [ItemListActions],
 
     onGetListCollection() {
         this.list = list;
@@ -54,4 +53,4 @@ const ListStore = Reflux.createStore({
 
 });
 
-export default ListStore;
+export default ItemListStore;

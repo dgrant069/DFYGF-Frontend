@@ -32,10 +32,6 @@ const ListForm = React.createClass({
                         <option value="">Acts of Serviced</option>
                 </select>
 
-                <button className="list-button button"
-                        onclick="">Ignore for now Add
-                </button>
-
                 <Link to="/my-list" className="my-list-button button">Add</Link>
 
             </form>

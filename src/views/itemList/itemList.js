@@ -4,20 +4,20 @@ import React            from 'react';
 import Reflux           from 'reflux';
 import Lodash           from 'lodash';
 import DocumentTitle    from 'react-document-title';
-import ListStore        from '../../stores/listStore';
+import ItemListStore    from '../../stores/itemListStore';
 import Lists            from '../../components/widgets/lists/lists';
 import {Link}           from 'react-router';
 
 // let list = [];
 
-const MyList = React.createClass({
-    mixins: [Reflux.connect(ListStore, "list")],
+const ItemList = React.createClass({
+    mixins: [Reflux.connect(ItemListStore, "list")],
     // getInitialState() {
     //     console.log("Testing getInitialState", React);
     // },
 
     // componentDidMount() {
-        // this.listenTo(ListStore.dogs, this.updateList);
+        // this.listenTo(ItemListStore.dogs, this.updateList);
         // list = this.state.list;
     // },
 
@@ -36,4 +36,4 @@ const MyList = React.createClass({
     }
 });
 
-export default MyList;
+export default ItemList;
