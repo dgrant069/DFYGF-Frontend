@@ -3,7 +3,8 @@
 import Reflux from 'reflux';
 
 const MyListActions = Reflux.createActions([
-  'getListCollection'
+    'addListCollection',
+    'getListCollection'
 ]);
 
 export default MyListActions;

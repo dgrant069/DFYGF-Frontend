@@ -2,6 +2,7 @@
 
 import React            from 'react';
 import {Link}           from 'react-router';
+import ListAction         from '../../../actions/myListActions';
 
 const ListForm = React.createClass({
 
@@ -32,7 +33,7 @@ const ListForm = React.createClass({
                         <option value="">Acts of Serviced</option>
                 </select>
 
-                <Link to="/my-list" className="my-list-button button">Add</Link>
+                <Link to="/my-list" className="my-list-button button" onClick={this.addListCollection()}>Add</Link>
 
             </form>
         );

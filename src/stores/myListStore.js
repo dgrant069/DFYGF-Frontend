@@ -15,11 +15,6 @@ function handleLoad(Action, Subaction){
 const MyListStore = Reflux.createStore({
     listenables: [MyListActions],
 
-    onGetListCollection() {
-        this.myList = myList;
-        return this.myList;
-    },
-
     getInitialState() {
         // this.listenToMany(MyListActions);
         this.myList = myList;
@@ -27,8 +22,17 @@ const MyListStore = Reflux.createStore({
   //   this.listenTo(MyListActions.checkLoginStatus, this.checkLoginStatus);
   //   this.listenTo(MyListActions.login, this.loginUser);
   //   this.listenTo(MyListActions.logout, this.logoutUser);
-    }
+    },
 
+    onGetListCollection() {
+        this.myList = myList;
+        return this.myList;
+    },
+
+    onAddListCollection(newList) {
+        myList.push(newList);
+        this.trigger(myList);
+    }
   // setUser(user, cb = function(){}) {
   //   this.user = user;
   //   cb(null, this.user);

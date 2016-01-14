@@ -29,7 +29,7 @@ const ItemList = React.createClass({
             <DocumentTitle title="My List">
             <section className="my-list-view-wrapper all-views">
                 <h1 className="item-list-title view-title">Your list of gifts</h1>
-                <Lists list={list}/>
+                <Lists list={list} addPath="/add-item"/>
             </section>
             </DocumentTitle>
         );

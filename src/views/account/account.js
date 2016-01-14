@@ -32,9 +32,7 @@ const Account = React.createClass({
             <section className="account-view-wrapper all-views">
                 <section className="account-choices">
                     <button className="account-button button" onClick={this.clickExpand}>My Lists</button>
-                        { this.state.showMyLists ? <Lists list={myList}/> : null }
-                        { this.state.showMyLists ? <li><Link to="/add-list">Add a list</Link></li> : null }
-                    <Link to="/my-list" className="account-button button">My Lists</Link>
+                        { this.state.showMyLists ? <Lists list={myList} addPath="/add-list"/> : null }
                     <Link to="/profile" className="account-button button">Edit Profile</Link>
                     <Link to="/settings" className="account-button button">Account Settings</Link>
                 </section>
