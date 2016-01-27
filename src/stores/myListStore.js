@@ -30,6 +30,7 @@ const MyListStore = Reflux.createStore({
     },
 
     onAddListCollection(newList) {
+        console.log("running store", newList);
         myList.push(newList);
         this.trigger(myList);
     }
